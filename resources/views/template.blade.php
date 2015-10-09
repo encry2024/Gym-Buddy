@@ -11,7 +11,7 @@
         @yield('header')
     </head>
 
-    <body>
+    <body style="background-color: #f5f8fa;">
         <div class="container-fluid">
             @yield('content')
         </div>

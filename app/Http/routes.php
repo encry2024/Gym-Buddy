@@ -1,5 +1,13 @@
 <?php
 
+Route::get('/registration', function () {
+    return view('registration');
+});
+
+Route::get('/login', function () {
+    return view('login');
+});
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -11,6 +19,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('registration');
-});
+// USER ROUTE
+post('validateLogin', ['as' => 'vl', 'uses' => 'UserController@validateLogin']);
+get('/', ['as' => 'home', 'uses' => 'UserController@showProfile']);

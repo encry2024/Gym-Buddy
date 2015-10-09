@@ -1,3 +1,14 @@
 .fnt-white {
     color: white !important;
 }
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-submenu:hover > a, .dropdown-submenu:focus > a {
+    /*background: rgb(60, 91, 121) !important;*/
+    background: #333;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    text-decoration: none;
+    color: #ffffff !important;
+    background-color: #333;
+}
